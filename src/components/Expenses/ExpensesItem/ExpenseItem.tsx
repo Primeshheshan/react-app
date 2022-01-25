@@ -1,5 +1,6 @@
+import { Card } from "../../UI/card/Card";
+import ExpensesDate from "../ExpensesDate/ExpensesDate";
 import "./ExpenseItem.css";
-import ExpensesDate from "./ExpensesDate";
 
 export interface IExpenseItemProps {
   title: string;
@@ -7,9 +8,9 @@ export interface IExpenseItemProps {
   date: Date;
 }
 
-function ExpenseItem(props: IExpenseItemProps) {
+export const ExpenseItem = (props: IExpenseItemProps) => {
   return (
-    <div className='expense-item'>
+    <Card className='expense-item'>
       <div className='expense-item__date'>
         <ExpensesDate date={props.date}></ExpensesDate>
       </div>
@@ -17,8 +18,6 @@ function ExpenseItem(props: IExpenseItemProps) {
         <h2>{props.title}</h2>
         <div className='expense-item__price'>${props.amount}</div>
       </div>
-    </div>
+    </Card>
   );
-}
-
-export default ExpenseItem;
+};

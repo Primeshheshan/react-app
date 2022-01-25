@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import "./ExpensesDate.css";
 export interface IAppProps {
   date: Date;
 }
@@ -9,10 +9,10 @@ export default function ExpensesDate(props: any) {
   const year = props.date.getFullYear();
   const date = props.date.toLocaleString("en-US", { day: "2-digit" });
   return (
-    <div>
-      <div>{year}</div>
-      <div>{month}</div>
-      <div>{date}</div>
+    <div className='expense-date'>
+      <div className='expense-date__month'>{month}</div>
+      <div className='expense-date__year'>{year}</div>
+      <div className='expense-date__day'>{date}</div>
     </div>
   );
 }
