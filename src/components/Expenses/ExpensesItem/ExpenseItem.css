@@ -27,7 +27,7 @@
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background-color: #2532a8;
+  background-color: #490e38;
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 12px;
@@ -36,6 +36,11 @@
 .expense-item__date {
   margin: 0rem 2rem;
   width: 5rem;
+}
+
+.expenseItem__actions {
+  text-align: right;
+  margin-left: 1rem;
 }
 
 @media (min-width: 580px) {
