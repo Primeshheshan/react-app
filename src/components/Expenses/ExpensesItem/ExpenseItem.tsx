@@ -1,4 +1,4 @@
-import { IExpense } from "../../type";
+import { IExpense } from "../../Files/type";
 import { Card } from "../../UI/card/Card";
 import ExpensesDate from "../ExpensesDate/ExpensesDate";
 import "./ExpenseItem.css";
