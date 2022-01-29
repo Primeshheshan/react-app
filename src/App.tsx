@@ -15,7 +15,7 @@ const DUMMYEXPENSES = [
     key: "2",
     title: "education",
     amount: 200,
-    date: new Date(2044, 3, 5),
+    date: new Date(2021, 3, 5),
   },
   { key: "e3232321", title: "health", amount: 300, date: new Date(2022, 4, 5) },
 ]; //multiple expenses item
