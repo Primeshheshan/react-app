@@ -1,6 +1,6 @@
 import * as React from "react";
-import { IExpense } from "../../type";
-import { ExpenseForm } from "./ExpenseFrom/ExpenseForm";
+import { IExpense } from "../../Files/type";
+import { ExpenseForm } from "../ExpenseFrom/ExpenseForm";
 import "./NewExpenses.css";
 
 interface INewExpensesProps {
