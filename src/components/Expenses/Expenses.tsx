@@ -6,6 +6,7 @@ import "./Expenses.css";
 import { IExpense } from "../Files/type";
 import { ExpensesFilter } from "./ExpensesFilter/ExpensesFilter";
 import { ExpensesList } from "./ExpensesList/ExpensesList";
+import { ExpensesChart } from "./ExpensesChart";
 interface IExpensesProps {
   items: IExpense[];
 }
@@ -24,6 +25,7 @@ export const Expenses = (props: IExpensesProps) => {
   return (
     <div>
       <ExpensesFilter onSelectedYear={filterChangeHandler} />
+      <ExpensesChart expensesList={filteredExpense} />
       <ExpensesList
         allExpenses={props.items}
         filteredExpense={filteredExpense}

@@ -12,4 +12,5 @@ export const DUMMYEXPENSES = [
     date: new Date(2021, 3, 5),
   },
   { key: "e3232321", title: "health", amount: 300, date: new Date(2022, 4, 5) },
+  { key: "e3232321", title: "health", amount: 500, date: new Date(2022, 8, 5) },
 ]; //multiple expenses item
