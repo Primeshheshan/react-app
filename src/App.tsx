@@ -12,7 +12,7 @@ export const App = () => {
     setExpenses((prevExpenses) => {
       return [expense, ...prevExpenses];
     });
-  };
+  }; //addExpenseHandler method
 
   return (
     <div>
